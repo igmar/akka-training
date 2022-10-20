@@ -11,10 +11,9 @@ import lombok.Value;
 
 import java.time.Duration;
 import java.util.Optional;
-import java.util.concurrent.CompletionStage;
 
 public class Actor1 extends AbstractLoggingActorWithStashAndTimers {
-    private static final String ACTOR1_NAME = "actor1";
+    private static final String ACTOR_NAME = "actor1";
 
     private static final String INIT_TIMER = "init-timer";
 
@@ -71,7 +70,7 @@ public class Actor1 extends AbstractLoggingActorWithStashAndTimers {
     }
 
     public static String name() {
-        return ACTOR1_NAME;
+        return ACTOR_NAME;
     }
 
     @Value

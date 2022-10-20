@@ -8,7 +8,7 @@ import com.palsenberg.akkatraining.pojo.Actor2Protocol;
 import java.util.Optional;
 
 public class Actor2 extends AbstractLoggingActorWithStashAndTimers {
-    private static final String ACTOR2_NAME = "actor2";
+    private static final String ACTOR_NAME = "actor2";
 
     public Actor2() {
         log().info("XXXX {} started", getSelf());
@@ -54,6 +54,6 @@ public class Actor2 extends AbstractLoggingActorWithStashAndTimers {
     }
 
     public static String name() {
-        return ACTOR2_NAME;
+        return ACTOR_NAME;
     }
 }
